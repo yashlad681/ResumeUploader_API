@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "7ca7b02b-37b1-4bc3-8314-0f49c2d5ec75",
+		"name": "ResumeUploaderAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "SaveProfile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "QWE",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "qwe@email.com",
+							"type": "text"
+						},
+						{
+							"key": "dob",
+							"value": "1995-01-01",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "Maharashtra",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "Male",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "Delhi",
+							"type": "text"
+						},
+						{
+							"key": "pimage",
+							"type": "file",
+							"src": "/C:/Users/YASH LAD/Desktop/mountains.png"
+						},
+						{
+							"key": "rdoc",
+							"type": "file",
+							"src": "/C:/Users/YASH LAD/Desktop/asd.doc"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/resume/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"resume",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListResume",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/list/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"list",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
